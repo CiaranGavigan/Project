@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Weather forecast
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,11 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Weather</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <li [routerLink] = "['/todays-forecast']" routerDirection= "forward">todays forecast</li>
+  <li [routerLink] = "['/tomorrows-forecast']" routerDirection= "forward">tomorrows forecast</li>
+  <li [routerLink] = "['/four-day-forecast']" routerDirection= "forward">four day forecast</li>
+  <li [routerLink] = "['/seven-day-forecast']" routerDirection= "forward">seven day forecast</li>
 </ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      todays-forecast is 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen] = "true">
+  <ion-header collapse ="condense">
+    <ion-toolbar>
+      <ion-title size="large">Todays Forecast</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-item *ngFor="let weather of WeatherData">
+  
+  <ul>
+  <!--<ion-label>{{coord.lon}}</ion-label>
+  <ion-label>{{coord.lat}}</ion-label>-->
+ <ion-label>{{weather.main}}</ion-label>
+ <br>
+ <ion-label>{{weather.description}}</ion-label>
+ </ul>
+
+
+ <ion-item *ngFor="let main of DetailedWeatherData">
+   <ul>
+   <ion-label>{{main.temp}}</ion-label>
+   <ion-label>{{main.feels_like}}</ion-label>
+   <ion-label>{{main.temp_min}}</ion-label>
+   <ion-label>{{main.temp_max}}</ion-label>
+   <ion-label>{{main.pressure}}</ion-label>
+   <ion-label>{{main.humidity}}</ion-label>
+   </ul>
+   
+

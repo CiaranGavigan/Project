@@ -6,11 +6,14 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodaysForecastPage } from './todays-forecast/todays-forecast.page';
+import{HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TodaysForecastPage],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

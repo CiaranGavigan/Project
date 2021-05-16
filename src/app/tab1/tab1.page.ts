@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TodaysForecastPage} from  '../todays-forecast/todays-forecast.page'
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+    //tab1Page = TodaysForecastPage;
   constructor() {}
+
+
 
 }
